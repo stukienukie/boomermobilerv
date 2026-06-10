@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Boomer Mobile RV | Utah RV Repair</title>
+  <meta name="description" content="Full-service mobile RV repair in Utah. Chassis, suspension, generators, solar, HVAC, plumbing, and pre-purchase inspections. We come to you.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .page-hero {
+      background-image: linear-gradient(135deg, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.65) 100%),
+        url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-slate-800">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center shadow-md shadow-orange-200">
+            <i class="fas fa-wrench text-white text-sm"></i>
+          </div>
+          <div class="leading-tight">
+            <div class="text-slate-900 font-extrabold text-base">Boomer Mobile RV</div>
+            <div class="text-orange-500 text-xs font-semibold tracking-wide">Repair & Solar · Utah</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">Home</a>
+          <a href="services.html" class="text-orange-500 font-semibold text-sm">Services</a>
+          <a href="solar.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">Solar</a>
+          <a href="about.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">About</a>
+          <a href="contact.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">Contact</a>
+          <a href="tel:3855983247" class="flex items-center space-x-2 text-slate-700 hover:text-orange-500 font-semibold text-sm transition-colors">
+            <i class="fas fa-phone text-orange-500"></i><span>(385) 598-3247</span>
+          </a>
+          <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-colors shadow-md shadow-orange-200">
+            Get a Quote
+          </a>
+        </div>
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-slate-700 p-2">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-1">
+      <a href="index.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">Home</a>
+      <a href="services.html" class="block text-orange-500 font-semibold py-2.5 border-b border-slate-50">Services</a>
+      <a href="solar.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">Solar</a>
+      <a href="about.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">About</a>
+      <a href="contact.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">Contact</a>
+      <div class="pt-3 flex flex-col gap-2">
+        <a href="tel:3855983247" class="flex items-center justify-center gap-2 border-2 border-orange-500 text-orange-500 px-5 py-3 rounded-lg font-bold">
+          <i class="fas fa-phone"></i> Call (385) 598-3247
+        </a>
+        <a href="contact.html" class="bg-orange-500 text-white px-5 py-3 rounded-lg font-bold text-center">Get a Free Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero pt-16" style="min-height:380px; display:flex; align-items:center;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="flex items-center gap-2 text-slate-400 text-sm mb-4">
+        <a href="index.html" class="hover:text-orange-400 transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-white font-medium">Services</span>
+      </div>
+      <h1 class="text-5xl sm:text-6xl font-black text-white mb-4">Our Services</h1>
+      <p class="text-xl text-slate-300 max-w-2xl">Complete RV repair and maintenance delivered to your location. From emergency fixes to full system upgrades — we handle it all.</p>
+    </div>
+  </section>
+
+  <!-- Top CTA Strip -->
+  <section class="bg-slate-900 py-5 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row gap-4 items-center justify-between">
+      <div class="flex items-center gap-3 text-white">
+        <i class="fas fa-bolt text-orange-400 text-lg"></i>
+        <span class="font-semibold">Need immediate technical assistance?</span>
+      </div>
+      <div class="flex gap-3">
+        <a href="tel:3855983247" class="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors text-sm">
+          <i class="fas fa-phone"></i> Call Now: (385) 598-3247
+        </a>
+        <a href="contact.html" class="flex items-center gap-2 border border-slate-600 hover:border-orange-500 text-slate-300 hover:text-orange-400 px-6 py-3 rounded-lg font-bold transition-colors text-sm">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Nav Pills -->
+  <section class="bg-white border-b border-slate-100 py-4 sticky top-16 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-auto">
+      <div class="flex gap-2 min-w-max">
+        <a href="#chassis" class="px-4 py-2 rounded-full bg-orange-50 text-orange-600 font-semibold text-sm hover:bg-orange-500 hover:text-white transition-colors whitespace-nowrap">Chassis &amp; Suspension</a>
+        <a href="#generator" class="px-4 py-2 rounded-full bg-slate-50 text-slate-600 font-semibold text-sm hover:bg-orange-500 hover:text-white transition-colors whitespace-nowrap">Generators</a>
+        <a href="#electrical" class="px-4 py-2 rounded-full bg-slate-50 text-slate-600 font-semibold text-sm hover:bg-orange-500 hover:text-white transition-colors whitespace-nowrap">Electrical</a>
+        <a href="#climate" class="px-4 py-2 rounded-full bg-slate-50 text-slate-600 font-semibold text-sm hover:bg-orange-500 hover:text-white transition-colors whitespace-nowrap">Climate &amp; HVAC</a>
+        <a href="#inspection" class="px-4 py-2 rounded-full bg-slate-50 text-slate-600 font-semibold text-sm hover:bg-orange-500 hover:text-white transition-colors whitespace-nowrap">Pre-Purchase Inspection</a>
+        <a href="#emergency" class="px-4 py-2 rounded-full bg-slate-50 text-slate-600 font-semibold text-sm hover:bg-orange-500 hover:text-white transition-colors whitespace-nowrap">Emergency Repair</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chassis & Suspension -->
+  <section id="chassis" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div>
+          <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-car-side text-orange-500 text-2xl"></i>
+          </div>
+          <h2 class="text-4xl font-black text-slate-900 mb-4">Chassis &amp; Suspension</h2>
+          <p class="text-slate-500 text-lg leading-relaxed mb-6">Your RV's chassis is its foundation. Whether you're dealing with a rough ride, handling issues, or structural damage from years on the road, Boomer brings the tools and expertise to fix it right — on-site, no hauling required.</p>
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Leaf Spring Upgrades</span> — Standard 4-leaf to performance 5-leaf configurations for improved load capacity and ride quality</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">U-Bolt Replacement</span> — Inspection and replacement of worn or damaged U-bolts and spring hardware</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Bearing Maintenance</span> — Hub and wheel bearing inspection, repacking, and replacement</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Brake Assemblies</span> — Complete brake system service including drums, shoes, adjusters, and actuators</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Structural Overhauls</span> — Major chassis repairs and frame reinforcement for heavily damaged or aging RVs</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors">Get a Quote</a>
+            <a href="tel:3855983247" class="flex items-center gap-2 border-2 border-slate-200 hover:border-orange-500 text-slate-700 hover:text-orange-500 px-6 py-3 rounded-lg font-bold transition-colors">
+              <i class="fas fa-phone text-sm"></i> Call Now
+            </a>
+          </div>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+          <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80" alt="RV suspension repair" class="rounded-xl w-full h-64 object-cover mb-6">
+          <div class="bg-orange-50 border border-orange-100 rounded-xl p-5">
+            <div class="flex items-center gap-3 mb-3">
+              <i class="fas fa-star text-orange-500"></i>
+              <span class="font-bold text-slate-800">Field Story: Infected Rain</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">Emergency leaf spring replacement on a touring band's equipment trailer at a Utah venue. 4-leaf to 5-leaf upgrade completed on-site. Tour saved, same day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="border-t border-slate-100"></div></div>
+
+  <!-- Generator & Power -->
+  <section id="generator" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div class="order-2 lg:order-1 bg-slate-50 rounded-2xl p-8 border border-slate-100">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee67df0d4d42?auto=format&fit=crop&w=800&q=80" alt="RV generator service" class="rounded-xl w-full h-64 object-cover mb-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl p-4 border border-slate-100 text-center">
+              <i class="fas fa-cogs text-orange-500 text-2xl mb-2"></i>
+              <div class="font-bold text-slate-800 text-sm">Cummins/Onan</div>
+              <div class="text-slate-500 text-xs">Certified Service</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 border border-slate-100 text-center">
+              <i class="fas fa-tools text-orange-500 text-2xl mb-2"></i>
+              <div class="font-bold text-slate-800 text-sm">On-Site Rebuild</div>
+              <div class="text-slate-500 text-xs">No Towing Needed</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-plug text-orange-500 text-2xl"></i>
+          </div>
+          <h2 class="text-4xl font-black text-slate-900 mb-4">Generator &amp; Power Systems</h2>
+          <p class="text-slate-500 text-lg leading-relaxed mb-6">A generator that won't start, surges under load, or runs rough is more than an inconvenience — it's a safety issue. Boomer provides industrial-level generator diagnostics and repair for all major on-board power systems.</p>
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Advanced Diagnostics</span> — Systematic troubleshooting to isolate the root cause, not just the symptom</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Cummins/Onan Service</span> — Expertise with industry-standard on-board industrial generators</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Electrical Timing</span> — Precise timing adjustments for optimal generator performance and fuel efficiency</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Full Rebuilds</span> — Complete generator overhauls when basic repairs aren't enough</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Preventive Maintenance</span> — Scheduled service to keep your generator reliable for the long haul</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors">Get a Quote</a>
+            <a href="tel:3855983247" class="flex items-center gap-2 border-2 border-slate-200 hover:border-orange-500 text-slate-700 hover:text-orange-500 px-6 py-3 rounded-lg font-bold transition-colors">
+              <i class="fas fa-phone text-sm"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="border-t border-slate-100"></div></div>
+
+  <!-- Electrical Infrastructure -->
+  <section id="electrical" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div>
+          <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-bolt text-orange-500 text-2xl"></i>
+          </div>
+          <h2 class="text-4xl font-black text-slate-900 mb-4">Electrical Infrastructure</h2>
+          <p class="text-slate-500 text-lg leading-relaxed mb-6">From a dead outlet to a complete 12V/120V system upgrade, Boomer handles RV electrical with the precision of an industrial systems specialist. Properly designed and installed electrical = a safer, more capable rig.</p>
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">DC/AC Inverter Installation</span> — Pure sine wave inverters properly sized and wired for your system</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Battery System Upgrades</span> — Lead-acid to lithium conversions, battery bank expansion, and BMS installation</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Solar Integration</span> — Connecting panels, charge controllers, and battery systems into a unified power setup</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Circuit Diagnostics</span> — Tracing shorts, blown fuses, broken grounds, and failed components</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Shore Power Systems</span> — 30A/50A hookup systems, adapters, and converter/charger service</div>
+            </div>
+          </div>
+          <div class="bg-orange-50 border border-orange-100 rounded-xl p-4 mb-6">
+            <p class="text-orange-800 text-sm"><i class="fas fa-lightbulb text-orange-500 mr-2"></i><strong>Going solar?</strong> Electrical upgrades and solar installations work hand-in-hand. See our <a href="solar.html" class="underline font-semibold">solar page</a> for complete off-grid system options.</p>
+          </div>
+          <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors inline-block">Get a Quote</a>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Solar panels and electrical systems" class="rounded-xl w-full h-64 object-cover mb-6">
+          <div class="space-y-3">
+            <div class="bg-white rounded-xl p-4 border border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-battery-full text-orange-500"></i>
+              </div>
+              <div><div class="font-bold text-slate-800 text-sm">Lithium Upgrades</div><div class="text-slate-500 text-xs">3-5x the capacity, half the weight</div></div>
+            </div>
+            <div class="bg-white rounded-xl p-4 border border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-wave-square text-orange-500"></i>
+              </div>
+              <div><div class="font-bold text-slate-800 text-sm">Pure Sine Inverters</div><div class="text-slate-500 text-xs">Clean power for sensitive electronics</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="border-t border-slate-100"></div></div>
+
+  <!-- Climate & HVAC -->
+  <section id="climate" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+          <img src="https://images.unsplash.com/photo-1540908489236-15aac8651d44?auto=format&fit=crop&w=800&q=80" alt="RV HVAC and climate systems" class="rounded-xl w-full h-64 object-cover mb-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl p-4 border border-slate-100 text-center">
+              <i class="fas fa-snowflake text-blue-400 text-2xl mb-2"></i>
+              <div class="font-bold text-slate-800 text-sm">AC Repair</div>
+              <div class="text-slate-500 text-xs">All major brands</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 border border-slate-100 text-center">
+              <i class="fas fa-fire text-orange-400 text-2xl mb-2"></i>
+              <div class="font-bold text-slate-800 text-sm">Winterization</div>
+              <div class="text-slate-500 text-xs">Complete service</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-snowflake text-orange-500 text-2xl"></i>
+          </div>
+          <h2 class="text-4xl font-black text-slate-900 mb-4">Climate &amp; Plumbing</h2>
+          <p class="text-slate-500 text-lg leading-relaxed mb-6">Comfort on the road means reliable heating, cooling, and water systems. Utah's climate swings from blazing summers to freezing winters — your RV needs to handle both. We service and repair all climate and plumbing systems on-site.</p>
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">AC Repair &amp; Servicing</span> — Rooftop and ducted air conditioning diagnostics, recharge, and repair</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Heating System Service</span> — Furnace and heat pump diagnostics, igniter replacement, and seasonal prep</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Full Winterization</span> — Complete water system blowout and antifreeze treatment before Utah winters</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Water Manifold Rebuilds</span> — Replacing failed PEX manifolds, valves, and distribution systems</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">De-Winterization</span> — Spring startup service to get your water system back online safely</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors">Get a Quote</a>
+            <a href="tel:3855983247" class="flex items-center gap-2 border-2 border-slate-200 hover:border-orange-500 text-slate-700 hover:text-orange-500 px-6 py-3 rounded-lg font-bold transition-colors">
+              <i class="fas fa-phone text-sm"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="border-t border-slate-100"></div></div>
+
+  <!-- Pre-Purchase Inspection -->
+  <section id="inspection" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div>
+          <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-5">
+            <i class="fas fa-clipboard-check text-orange-500 text-2xl"></i>
+          </div>
+          <h2 class="text-4xl font-black text-slate-900 mb-4">Pre-Purchase Inspection</h2>
+          <p class="text-slate-500 text-lg leading-relaxed mb-6">Buying an RV is a major investment. Private sellers and even dealers may not disclose every issue. A professional pre-purchase inspection by Boomer gives you an unbiased, expert assessment of everything from the chassis to the roof before you sign anything.</p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Chassis &amp; Frame</span> — Rust, cracks, weld failures, and structural integrity assessment</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Mechanical Systems</span> — Engine, transmission, brakes, and suspension evaluation</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Electrical Systems</span> — 12V, 120V, generator, shore power, and battery condition</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Roof &amp; Seals</span> — Delamination, leaks, caulk failure, and roof membrane condition</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-orange-500 mt-0.5 flex-shrink-0"></i>
+              <div><span class="font-semibold text-slate-800">Appliances &amp; Systems</span> — Water heater, refrigerator, furnace, AC, and slideout operation</div>
+            </div>
+          </div>
+          <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-6">
+            <p class="text-blue-800 text-sm"><i class="fas fa-info-circle text-blue-500 mr-2"></i><strong>We come to the RV.</strong> Inspection can be done at the seller's location — no need to move the unit before you own it.</p>
+          </div>
+          <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors inline-block">Schedule an Inspection</a>
+        </div>
+        <div class="bg-slate-900 rounded-2xl p-8 text-white">
+          <h3 class="text-2xl font-black mb-6">What's Included</h3>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-700">
+              <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0 text-sm font-bold">1</div>
+              <div>
+                <div class="font-bold">Full Walk-Through</div>
+                <div class="text-slate-400 text-sm">Interior and exterior visual inspection by an experienced eye</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-700">
+              <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0 text-sm font-bold">2</div>
+              <div>
+                <div class="font-bold">Systems Test</div>
+                <div class="text-slate-400 text-sm">Operational testing of all major systems and appliances</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 pb-4 border-b border-slate-700">
+              <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0 text-sm font-bold">3</div>
+              <div>
+                <div class="font-bold">Detailed Report</div>
+                <div class="text-slate-400 text-sm">Written findings with priority levels and estimated repair costs</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0 text-sm font-bold">4</div>
+              <div>
+                <div class="font-bold">Expert Consultation</div>
+                <div class="text-slate-400 text-sm">Walk-through of findings so you can make a confident decision</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Repair -->
+  <section id="emergency" class="py-20 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-5">
+          <i class="fas fa-truck-fast text-white text-2xl"></i>
+        </div>
+        <h2 class="text-4xl font-black text-white mb-4">Emergency &amp; On-Site Repair</h2>
+        <p class="text-slate-300 text-xl leading-relaxed">When your RV breaks down at the worst moment — a campsite, a venue, a highway pulloff — Boomer comes to you. No tow truck, no waiting, no ruined trip.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
+          <i class="fas fa-campground text-orange-400 text-3xl mb-4"></i>
+          <h3 class="text-white font-bold text-lg mb-2">Campsite Repairs</h3>
+          <p class="text-slate-400 text-sm">Mechanical or system failures at the campsite, RV park, or storage lot.</p>
+        </div>
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
+          <i class="fas fa-road text-orange-400 text-3xl mb-4"></i>
+          <h3 class="text-white font-bold text-lg mb-2">Roadside Emergency</h3>
+          <p class="text-slate-400 text-sm">Breakdowns on the highway, side streets, or anywhere within our service area.</p>
+        </div>
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 text-center">
+          <i class="fas fa-calendar-check text-orange-400 text-3xl mb-4"></i>
+          <h3 class="text-white font-bold text-lg mb-2">Pre-Trip Prep</h3>
+          <p class="text-slate-400 text-sm">Last-minute service calls before a big trip to ensure everything is working.</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <p class="text-slate-400 mb-5 text-lg">For emergencies, call directly — don't wait for email.</p>
+        <a href="tel:3855983247" class="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-10 py-5 rounded-xl font-black text-xl transition-colors shadow-2xl shadow-orange-500/20">
+          <i class="fas fa-phone-volume"></i> Call Mike: (385) 598-3247
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center">
+              <i class="fas fa-wrench text-white text-sm"></i>
+            </div>
+            <span class="text-white font-extrabold text-xl">Boomer Mobile RV</span>
+          </div>
+          <p class="text-slate-400 mb-5 leading-relaxed max-w-sm">Professional mobile RV repair, diagnostics, and solar installation across Utah. 40+ years of expertise. We come to you.</p>
+          <div class="space-y-2.5">
+            <div class="flex items-center gap-3 text-slate-400"><i class="fas fa-phone text-orange-500 w-4 text-sm"></i><a href="tel:3855983247" class="hover:text-white transition-colors">(385) 598-3247</a></div>
+            <div class="flex items-center gap-3 text-slate-400"><i class="fas fa-envelope text-orange-500 w-4 text-sm"></i><a href="mailto:info@boomermobilerv.com" class="hover:text-white transition-colors">info@boomermobilerv.com</a></div>
+            <div class="flex items-center gap-3 text-slate-400"><i class="fas fa-map-marker-alt text-orange-500 w-4 text-sm"></i><span>Midvale, Utah</span></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-slate-400 hover:text-white transition-colors text-sm">Home</a></li>
+            <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors text-sm">Services</a></li>
+            <li><a href="solar.html" class="text-slate-400 hover:text-white transition-colors text-sm">Solar Installation</a></li>
+            <li><a href="about.html" class="text-slate-400 hover:text-white transition-colors text-sm">About Mike</a></li>
+            <li><a href="contact.html" class="text-slate-400 hover:text-white transition-colors text-sm">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Service Areas</h3>
+          <ul class="space-y-1.5 text-slate-400 text-sm">
+            <li>Midvale, UT</li><li>Sandy, UT</li><li>Draper, UT</li><li>Riverton, UT</li>
+            <li>South Jordan, UT</li><li>Park City, UT</li><li>Provo, UT</li><li>Layton, UT</li><li>Tooele, UT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+        <p>&copy; 2024 Boomer Mobile RV. All rights reserved.</p>
+        <p>Midvale, Utah &nbsp;|&nbsp; (385) 598-3247 &nbsp;|&nbsp; info@boomermobilerv.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

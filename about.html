@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Mike "Boomer" Hennessy — Boomer Mobile RV Utah</title>
+  <meta name="description" content="Meet Mike 'Boomer' Hennessy — 40+ years of mechanical expertise, former Triumph Motorcycles national technical manager. Now bringing that expertise to RV owners across Utah.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .about-hero {
+      background-image: linear-gradient(135deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.60) 100%),
+        url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-slate-800">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center shadow-md shadow-orange-200">
+            <i class="fas fa-wrench text-white text-sm"></i>
+          </div>
+          <div class="leading-tight">
+            <div class="text-slate-900 font-extrabold text-base">Boomer Mobile RV</div>
+            <div class="text-orange-500 text-xs font-semibold tracking-wide">Repair & Solar · Utah</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">Home</a>
+          <a href="services.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">Services</a>
+          <a href="solar.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">Solar</a>
+          <a href="about.html" class="text-orange-500 font-semibold text-sm">About</a>
+          <a href="contact.html" class="text-slate-600 hover:text-orange-500 font-medium text-sm transition-colors">Contact</a>
+          <a href="tel:3855983247" class="flex items-center space-x-2 text-slate-700 hover:text-orange-500 font-semibold text-sm transition-colors">
+            <i class="fas fa-phone text-orange-500"></i><span>(385) 598-3247</span>
+          </a>
+          <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-colors shadow-md shadow-orange-200">
+            Get a Quote
+          </a>
+        </div>
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-slate-700 p-2">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-1">
+      <a href="index.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">Home</a>
+      <a href="services.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">Services</a>
+      <a href="solar.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">Solar</a>
+      <a href="about.html" class="block text-orange-500 font-semibold py-2.5 border-b border-slate-50">About</a>
+      <a href="contact.html" class="block text-slate-600 hover:text-orange-500 font-medium py-2.5 border-b border-slate-50">Contact</a>
+      <div class="pt-3 flex flex-col gap-2">
+        <a href="tel:3855983247" class="flex items-center justify-center gap-2 border-2 border-orange-500 text-orange-500 px-5 py-3 rounded-lg font-bold">
+          <i class="fas fa-phone"></i> Call (385) 598-3247
+        </a>
+        <a href="contact.html" class="bg-orange-500 text-white px-5 py-3 rounded-lg font-bold text-center">Get a Free Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <section class="about-hero pt-16" style="min-height:440px; display:flex; align-items:center;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="flex items-center gap-2 text-slate-400 text-sm mb-5">
+        <a href="index.html" class="hover:text-orange-400 transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span class="text-white font-medium">About</span>
+      </div>
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="h-px w-10 bg-orange-400"></div>
+          <span class="text-orange-400 font-semibold text-sm uppercase tracking-widest">The Person Behind the Wrench</span>
+        </div>
+        <h1 class="text-5xl sm:text-6xl font-black text-white leading-tight mb-5">
+          Meet Mike<br><span class="text-orange-400">"Boomer" Hennessy</span>
+        </h1>
+        <p class="text-xl text-slate-300 leading-relaxed">40+ years of mechanical expertise. From the Australian Outback to the Utah desert — every repair draws on a lifetime of real-world experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-px w-8 bg-orange-500"></div>
+            <span class="text-orange-500 font-semibold text-sm uppercase tracking-widest">The Story</span>
+          </div>
+          <h2 class="text-4xl font-black text-slate-900 mb-6">A Career Built on the Road</h2>
+          <div class="prose prose-slate max-w-none space-y-5 text-slate-600 leading-relaxed">
+            <p class="text-lg">Mike "Boomer" Hennessy didn't learn mechanics in a classroom. He built his expertise over four decades across some of the most demanding environments in the world — from the Australian Outback to international racing circuits to the high-stakes world of national fleet management.</p>
+            <p>His career began with a deep immersion in powersport mechanics, eventually rising to the position of <strong class="text-slate-800">National Technical &amp; Warranty Manager for Triumph Motorcycles in Australia</strong> — one of the most demanding technical oversight roles in the industry. Managing warranty claims and technical standards across a national dealer network demands a level of diagnostic precision that most mechanics never develop.</p>
+            <p>From there, Boomer moved into heavy fleet operations, working with <strong class="text-slate-800">Polaris and Victory Motorcycles</strong>, developing expertise in large-scale mechanical operations, parts logistics, and field service under conditions where failure isn't an option.</p>
+            <p>His background in <strong class="text-slate-800">off-road racing and Australian Outback operations</strong> gave him something that classroom training never could: the ability to diagnose and repair complex mechanical systems with limited tools, in the field, under pressure, when the stakes are real.</p>
+            <p>Now based in Midvale, Utah, Mike brings every bit of that experience to RV owners across the Salt Lake Valley — as the sole technician, the person who answers the phone, does the work, and stands behind it.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bg-slate-900 rounded-2xl p-8 mb-6">
+            <h3 class="text-white font-black text-2xl mb-6">Career Highlights</h3>
+            <div class="space-y-5">
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-trophy text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-white font-bold">National Technical &amp; Warranty Manager</div>
+                  <div class="text-slate-400 text-sm">Triumph Motorcycles — Australia</div>
+                  <div class="text-slate-500 text-xs mt-1">Managed national technical standards and warranty operations across the dealer network</div>
+                </div>
+              </div>
+              <div class="border-t border-slate-700"></div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-motorcycle text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-white font-bold">Heavy Fleet Specialist</div>
+                  <div class="text-slate-400 text-sm">Polaris &amp; Victory Motorcycles</div>
+                  <div class="text-slate-500 text-xs mt-1">Fleet operations, technical training, and large-scale mechanical management</div>
+                </div>
+              </div>
+              <div class="border-t border-slate-700"></div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-flag-checkered text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-white font-bold">Off-Road Racing</div>
+                  <div class="text-slate-400 text-sm">Competition &amp; Field Operations</div>
+                  <div class="text-slate-500 text-xs mt-1">Mechanical support in high-demand racing environments requiring precision under pressure</div>
+                </div>
+              </div>
+              <div class="border-t border-slate-700"></div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-globe-asia text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-white font-bold">Australian Outback Operations</div>
+                  <div class="text-slate-400 text-sm">Remote Field Service</div>
+                  <div class="text-slate-500 text-xs mt-1">Mechanical operations in remote environments — diagnosing and repairing systems with limited resources</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-orange-50 rounded-2xl p-5 text-center border border-orange-100">
+              <div class="text-3xl font-black text-orange-500 mb-1">40+</div>
+              <div class="text-slate-600 text-xs font-semibold">Years Experience</div>
+            </div>
+            <div class="bg-orange-50 rounded-2xl p-5 text-center border border-orange-100">
+              <div class="text-3xl font-black text-orange-500 mb-1">9+</div>
+              <div class="text-slate-600 text-xs font-semibold">Cities Served</div>
+            </div>
+            <div class="bg-orange-50 rounded-2xl p-5 text-center border border-orange-100">
+              <div class="text-3xl font-black text-orange-500 mb-1">1</div>
+              <div class="text-slate-600 text-xs font-semibold">Person You Deal With</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <div class="flex items-center justify-center gap-3 mb-3">
+          <div class="h-px w-8 bg-orange-500"></div>
+          <span class="text-orange-500 font-semibold text-sm uppercase tracking-widest">How We Work</span>
+          <div class="h-px w-8 bg-orange-500"></div>
+        </div>
+        <h2 class="text-4xl font-black text-slate-900 mb-4">The Boomer Approach</h2>
+        <p class="text-slate-500 text-lg max-w-2xl mx-auto">A lifetime in the field teaches you things about how good service should actually work.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm">
+          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-house text-orange-500 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">We Come to You</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">No towing fees, no waiting rooms, no dealership markups. Your time matters — we schedule around you.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm">
+          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-magnifying-glass text-orange-500 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Diagnose First</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">We find the actual root cause before recommending any repair. No guesswork, no unnecessary parts replacement.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm">
+          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-comment-dollar text-orange-500 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Straight Talk</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">You'll hear exactly what's wrong, what it'll cost, and whether it's worth fixing. No inflated estimates, no surprise charges.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm">
+          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-shield-check text-orange-500 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Done Right</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Every repair is backed by professional standards built over 40 years. We don't do half-measures or "good enough."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-px w-8 bg-orange-500"></div>
+            <span class="text-orange-400 font-semibold text-sm uppercase tracking-widest">Field Story</span>
+          </div>
+          <h2 class="text-4xl font-black text-white mb-5">The Infected Rain Rescue</h2>
+          <p class="text-slate-300 text-lg leading-relaxed mb-5">International touring band Infected Rain was mid-tour when their equipment trailer's leaf spring assemblies failed at a Utah venue. The failure meant their gear couldn't move — and neither could the tour.</p>
+          <p class="text-slate-400 leading-relaxed mb-5">Boomer arrived on-site, assessed the damage, and executed a same-day structural repair: removing the failed 4-leaf spring assemblies and replacing them with upgraded 5-leaf configurations. The trailer left under its own load the same evening.</p>
+          <p class="text-slate-400 leading-relaxed mb-8">This is what 40+ years of real-world mechanical experience looks like in practice — not a repair manual, but a deep instinct for what a system needs and how to deliver it under pressure.</p>
+          <div class="flex items-center gap-6">
+            <div class="text-center">
+              <div class="text-3xl font-black text-orange-400">Emergency</div>
+              <div class="text-slate-500 text-xs mt-1">Structural Failure</div>
+            </div>
+            <div class="w-px h-10 bg-slate-700"></div>
+            <div class="text-center">
+              <div class="text-3xl font-black text-orange-400">Same Day</div>
+              <div class="text-slate-500 text-xs mt-1">On-Site Repair</div>
+            </div>
+            <div class="w-px h-10 bg-slate-700"></div>
+            <div class="text-center">
+              <div class="text-3xl font-black text-orange-400">Upgraded</div>
+              <div class="text-slate-500 text-xs mt-1">4-Leaf to 5-Leaf</div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-5">
+          <div class="bg-slate-800 rounded-2xl p-7 border border-slate-700">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-11 h-11 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-music text-white"></i>
+              </div>
+              <div>
+                <div class="text-white font-bold">Infected Rain</div>
+                <div class="text-slate-400 text-sm">International Touring Band</div>
+              </div>
+            </div>
+            <blockquote class="text-slate-300 italic leading-relaxed border-l-4 border-orange-500 pl-4">
+              "When our trailer went down at the venue, we thought the show — and the rest of the tour — was over. Boomer showed up and had us back on the road the same day with upgraded springs. Absolute lifesaver."
+            </blockquote>
+            <div class="flex gap-1 mt-4">
+              <i class="fas fa-star text-orange-400 text-sm"></i>
+              <i class="fas fa-star text-orange-400 text-sm"></i>
+              <i class="fas fa-star text-orange-400 text-sm"></i>
+              <i class="fas fa-star text-orange-400 text-sm"></i>
+              <i class="fas fa-star text-orange-400 text-sm"></i>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+            <p class="text-slate-400 text-sm leading-relaxed"><i class="fas fa-info-circle text-orange-400 mr-2"></i>This repair is a perfect example of the mobile advantage: no tow truck, no shop wait, no logistics nightmare. The repair happened right there, right when it needed to.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Mobile -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="h-px w-8 bg-orange-500"></div>
+        <span class="text-orange-500 font-semibold text-sm uppercase tracking-widest">Why Mobile</span>
+        <div class="h-px w-8 bg-orange-500"></div>
+      </div>
+      <h2 class="text-4xl font-black text-slate-900 mb-5">The Case for On-Site Service</h2>
+      <p class="text-slate-500 text-xl leading-relaxed mb-10 max-w-3xl mx-auto">Dealerships and traditional shops require you to tow your RV in, leave it for days, and pay shop rates that include the overhead of a building. Boomer's mobile model eliminates all of that. You pay for expertise and labor — nothing else.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-red-50 rounded-2xl p-6 border border-red-100">
+          <div class="text-red-500 font-bold text-lg mb-2">Traditional Shop</div>
+          <ul class="space-y-2 text-slate-500 text-sm text-left">
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Towing costs</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Days-long wait times</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> High shop overhead</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Multiple technicians</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Location-bound</li>
+          </ul>
+        </div>
+        <div class="bg-orange-50 rounded-2xl p-6 border-2 border-orange-300">
+          <div class="text-orange-500 font-bold text-lg mb-2">Boomer Mobile RV</div>
+          <ul class="space-y-2 text-slate-700 text-sm text-left">
+            <li class="flex items-center gap-2"><i class="fas fa-check text-orange-500"></i> No towing needed</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-orange-500"></i> Same-day service</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-orange-500"></i> Lower overhead = fair pricing</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-orange-500"></i> One expert, direct accountability</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-orange-500"></i> We come to your location</li>
+          </ul>
+        </div>
+        <div class="bg-red-50 rounded-2xl p-6 border border-red-100">
+          <div class="text-red-500 font-bold text-lg mb-2">DIY Repair</div>
+          <ul class="space-y-2 text-slate-500 text-sm text-left">
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Risk of further damage</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Wrong part purchases</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> No diagnostic tools</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Safety risks</li>
+            <li class="flex items-center gap-2"><i class="fas fa-times text-red-400"></i> Voided warranties</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-black text-white mb-4">Work With Boomer</h2>
+      <p class="text-slate-400 text-xl mb-10">Whether it's a complex diagnostic challenge or a straightforward repair, you're working directly with Mike — no dispatch, no middleman.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors shadow-2xl shadow-orange-500/20">
+          Get a Quote
+        </a>
+        <a href="tel:3855983247" class="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors">
+          <i class="fas fa-phone"></i> (385) 598-3247
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center">
+              <i class="fas fa-wrench text-white text-sm"></i>
+            </div>
+            <span class="text-white font-extrabold text-xl">Boomer Mobile RV</span>
+          </div>
+          <p class="text-slate-400 mb-5 leading-relaxed max-w-sm">Professional mobile RV repair, diagnostics, and solar installation across Utah. 40+ years of expertise. We come to you.</p>
+          <div class="space-y-2.5">
+            <div class="flex items-center gap-3 text-slate-400"><i class="fas fa-phone text-orange-500 w-4 text-sm"></i><a href="tel:3855983247" class="hover:text-white transition-colors">(385) 598-3247</a></div>
+            <div class="flex items-center gap-3 text-slate-400"><i class="fas fa-envelope text-orange-500 w-4 text-sm"></i><a href="mailto:info@boomermobilerv.com" class="hover:text-white transition-colors">info@boomermobilerv.com</a></div>
+            <div class="flex items-center gap-3 text-slate-400"><i class="fas fa-map-marker-alt text-orange-500 w-4 text-sm"></i><span>Midvale, Utah</span></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-slate-400 hover:text-white transition-colors text-sm">Home</a></li>
+            <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors text-sm">Services</a></li>
+            <li><a href="solar.html" class="text-slate-400 hover:text-white transition-colors text-sm">Solar Installation</a></li>
+            <li><a href="about.html" class="text-slate-400 hover:text-white transition-colors text-sm">About Mike</a></li>
+            <li><a href="contact.html" class="text-slate-400 hover:text-white transition-colors text-sm">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Service Areas</h3>
+          <ul class="space-y-1.5 text-slate-400 text-sm">
+            <li>Midvale, UT</li><li>Sandy, UT</li><li>Draper, UT</li><li>Riverton, UT</li>
+            <li>South Jordan, UT</li><li>Park City, UT</li><li>Provo, UT</li><li>Layton, UT</li><li>Tooele, UT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+        <p>&copy; 2024 Boomer Mobile RV. All rights reserved.</p>
+        <p>Midvale, Utah &nbsp;|&nbsp; (385) 598-3247 &nbsp;|&nbsp; info@boomermobilerv.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
